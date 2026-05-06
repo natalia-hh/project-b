@@ -56,7 +56,7 @@ const formatNumber = (value: number, maximumFractionDigits = 0) => {
 };
 
 const formatMoney = (value: number) => `${formatNumber(value, 0)} USDT`;
-const formatPrice = (value: number) => `${formatNumber(value, 0)} USDT`;
+const formatPrice = (value: number) => `${formatNumber(value, 2)} USDT`;
 const formatQuantity = (value: number) => formatNumber(value, 2);
 const numberInputValue = (value: number, maximumFractionDigits = 2) => {
   if (!Number.isFinite(value) || value === 0) return "";
